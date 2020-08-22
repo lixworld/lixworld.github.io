@@ -17,7 +17,17 @@
       <pubDate>Sat, 22 Aug 2020 11:23:15 +0800</pubDate>
       
       <guid>http://localhost:1313/post/2020/08/flyway-best-practicies/</guid>
-      <description>数据库迁移最佳实践 - 使用flyway 意译自：https://dbabulletin.com/index.php/2018/03/29/bes</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;意译自：https://dbabulletin.com/index.php/2018/03/29/best-practices-using-flyway-for-database-migrations/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Flyway 和 Liquibase 都是 Java 项目中常用的 DB migration 工具，这里只讨论flyway。&lt;/p&gt;
+&lt;h3 id=&#34;1flyway&#34;&gt;1、flyway&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;官方地址：&lt;a href=&#34;https://flywaydb.org/&#34;&gt;https://flywaydb.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;官方文档：https://flywaydb.org/documentation&lt;/li&gt;
+&lt;li&gt;配置参数：https://flywaydb.org/documentation/configfiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;flyway 需要在 DB 中先创建一个 metdata 表 (缺省表名为 &lt;code&gt;flyway_schema_history&lt;/code&gt;), 在该表中保存着每次 migration 的记录, 记录包含 migration 脚本的版本号和 SQL 脚本的 checksum 值. 当一个新的 SQL 脚本被扫描到后, Flyway 解析该 SQL 脚本的版本号, 并和 metadata 表已 apply 的的 migration 对比, 如果该 SQL 脚本版本更新的话, 将在指定的 DB 上执行该 SQL 文件, 否则跳过该 SQL 文件.&lt;/p&gt;</description>
     </item>
     
   </channel>
