@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on li&#39;s blog</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on li&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Aug 2020 11:23:15 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flyway Best Practicies</title>
+      <link>http://localhost:1313/post/2020/08/flyway-best-practicies/</link>
+      <pubDate>Sat, 22 Aug 2020 11:23:15 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/08/flyway-best-practicies/</guid>
+      <description>数据库迁移最佳实践 - 使用flyway 意译自：https://dbabulletin.com/index.php/2018/03/29/bes</description>
+    </item>
+    
+  </channel>
+</rss>
